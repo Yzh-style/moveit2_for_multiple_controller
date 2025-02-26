@@ -1,0 +1,31 @@
+running egg_info
+creating build/welding_kinematic_controller/welding_kinematic_controller.egg-info
+writing build/welding_kinematic_controller/welding_kinematic_controller.egg-info/PKG-INFO
+writing dependency_links to build/welding_kinematic_controller/welding_kinematic_controller.egg-info/dependency_links.txt
+writing entry points to build/welding_kinematic_controller/welding_kinematic_controller.egg-info/entry_points.txt
+writing requirements to build/welding_kinematic_controller/welding_kinematic_controller.egg-info/requires.txt
+writing top-level names to build/welding_kinematic_controller/welding_kinematic_controller.egg-info/top_level.txt
+writing manifest file 'build/welding_kinematic_controller/welding_kinematic_controller.egg-info/SOURCES.txt'
+reading manifest file 'build/welding_kinematic_controller/welding_kinematic_controller.egg-info/SOURCES.txt'
+writing manifest file 'build/welding_kinematic_controller/welding_kinematic_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/build/welding_kinematic_controller/build
+creating /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/build/welding_kinematic_controller/build/lib
+creating /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/build/welding_kinematic_controller/build/lib/welding_kinematic_controller
+copying welding_kinematic_controller/__init__.py -> /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/build/welding_kinematic_controller/build/lib/welding_kinematic_controller
+running install
+running install_lib
+creating /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/lib/python3.10/site-packages/welding_kinematic_controller
+copying /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/build/welding_kinematic_controller/build/lib/welding_kinematic_controller/__init__.py -> /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/lib/python3.10/site-packages/welding_kinematic_controller
+byte-compiling /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/lib/python3.10/site-packages/welding_kinematic_controller/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/share/ament_index
+creating /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/share/ament_index/resource_index
+creating /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/share/ament_index/resource_index/packages
+copying resource/welding_kinematic_controller -> /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/share/ament_index/resource_index/packages
+copying package.xml -> /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/share/welding_kinematic_controller
+running install_egg_info
+Copying build/welding_kinematic_controller/welding_kinematic_controller.egg-info to /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/lib/python3.10/site-packages/welding_kinematic_controller-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/build/welding_kinematic_controller/install.log'

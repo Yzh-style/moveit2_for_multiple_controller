@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="positioner">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import positioner urdf file -->
+    <xacro:include filename="$(find welding_kinematic_controller)/urdf/positioner.urdf.xacro" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="positioner.ros2_control.xacro" />
+
+
+    <xacro:positioner_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
+</robot>

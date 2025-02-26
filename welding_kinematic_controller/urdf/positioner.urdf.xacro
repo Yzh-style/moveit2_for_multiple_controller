@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="positioner">
+    <!-- Root link -->
+    <link name="positioner_base_link"/>
+<!-- LINKS -->
+    <!-- positioner_caterpillar -->
+    <link name="p_caterpillar">
+        <visual>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/caterpillar.stl"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/caterpillar.stl"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- positioner_caterpillar Blade -->
+    <link name="p_cat_blade">
+        <visual>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/cat_blade.stl" />
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/cat_blade.stl" />
+            </geometry>
+        </collision>
+    </link>
+    <!-- Manipulator Base -->
+    <link name="p_manip_base">
+        <visual>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/manip_base.stl" />
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/manip_base.stl" />
+            </geometry>
+        </collision>
+    </link>
+    <!-- Link1 -->
+    <link name="p_link1">
+        <visual>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/link1.stl" />
+            </geometry>
+            <origin xyz="-0.0025 -3.5365 -0.173" rpy="0 0 0"/>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/link1.stl" />
+            </geometry>
+            <origin xyz="-0.0025 -3.5365 -0.173" rpy="0 0 0"/>
+        </collision>
+    </link>
+    <!-- Link2 -->
+    <link name="p_link2">
+        <visual>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/link2.stl" />
+            </geometry>
+            <origin xyz="0.1104 -3.3615 -0.572" rpy="0 0 0"/>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/link2.stl" />
+            </geometry>
+            <origin xyz="0.1104 -3.3615 -0.572" rpy="0 0 0"/>
+        </collision>
+    </link>
+    <!-- Link3 -->
+    <link name="p_link3">
+        <visual>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/link3.stl" />
+            </geometry>
+            <origin xyz="0.1167 -3.3615 -1.462" rpy="0 0 0"/>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/link3.stl" />
+            </geometry>
+            <origin xyz="0.1167 -3.3615 -1.462" rpy="0 0 0"/>
+        </collision>
+    </link>
+    <!-- Link4 -->
+    <link name="p_link4">
+        <visual>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/link4.stl" />
+            </geometry>
+            <origin xyz="0.0008 -3.0156 -1.5217" rpy="0 0 0"/>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/link4.stl" />
+            </geometry>
+            <origin xyz="0.0008 -3.0156 -1.5217" rpy="0 0 0"/>
+        </collision>
+    </link>
+    <!-- Link5 -->
+    <link name="p_link5">
+        <visual>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/link5.stl" />
+            </geometry>
+            <origin xyz="-0.0192 -2.3278 -1.5415" rpy="0 0 0"/>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/link5.stl" />
+            </geometry>
+            <origin xyz="-0.0192 -2.3278 -1.5415" rpy="0 0 0"/>
+        </collision>
+    </link>
+    <!-- Link6 -->
+    <link name="p_link6">
+        <visual>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/link6.stl" />
+            </geometry>
+            <origin xyz="-0.0192 -2.3278 -1.5415" rpy="0 0 0"/>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/link6.stl" />
+            </geometry>
+            <origin xyz="-0.0192 -2.3278 -1.5415" rpy="0 0 0"/>
+        </collision>
+    </link>
+    <!-- End Effector -->
+    <!-- <link name="magnetic_gripper">
+        <visual>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/magnetic_gripper.stl" />
+            </geometry>
+            <origin xyz="0 0 0"/>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://welding_kinematic_controller/urdf/meshes/positioner/magnetic_gripper.stl" />
+            </geometry>
+            <origin xyz="0 0 0"/>
+        </collision>
+    </link> -->
+<!-- END OF LINKS -->
+<!-- JOINTS -->
+    <joint name="base_to_p_caterpillar" type="fixed">
+        <parent link="positioner_base_link"/>
+        <child link="p_caterpillar"/>
+        <origin xyz="0 0 0.6786" rpy="0 0 0"/>
+    </joint>
+    <!-- positioner_caterpillar to Blade -->
+    <joint name="cat_to_blade" type="fixed">
+        <parent link="p_caterpillar"/>
+        <child link="p_cat_blade"/>
+    </joint>
+    <!-- positioner_caterpillar to Manipulator Base -->
+    <joint name="cat_to_manip_base" type="fixed">
+        <parent link="p_caterpillar"/>
+        <child link="p_manip_base"/>
+    </joint>
+    <!-- Manipulator Base to Link1 -->
+    <joint name="manip_base_to_link1" type="revolute">
+        <parent link="p_manip_base"/>
+        <child link="p_link1"/>
+        <axis xyz="0 0 1"/>
+        <origin xyz="0.0025 3.5365 0.173" rpy="0 0 0"/>
+        <limit lower="-3.14" upper="3.14" effort="10" velocity="1.0"/>
+    </joint>
+    <!-- Link1 to Link2 -->
+    <joint name="link1_to_link2" type="revolute">
+        <parent link="p_link1"/>
+        <child link="p_link2"/>
+        <axis xyz="1 0 0"/>
+        <origin xyz="-0.1129 -0.175 0.399" rpy="0 0 0"/>
+        <limit lower="-3.14" upper="3.14" effort="10" velocity="1.0"/>
+    </joint>
+    <!-- Link2 to Link3 -->
+    <joint name="link2_to_link3" type="revolute">
+        <parent link="p_link2"/>
+        <child link="p_link3"/>
+        <axis xyz="1 0 0"/>
+        <origin xyz="-0.063 0 0.89" rpy="0 0 0"/>
+        <limit lower="-3.14" upper="3.14" effort="10" velocity="1.0"/>
+    </joint>
+    <!-- Link3 to Link4 -->
+    <joint name="link3_to_link4" type="revolute">
+        <parent link="p_link3"/>
+        <child link="p_link4"/>
+        <axis xyz="0.02979188 -0.99897253  0.03415166"/>
+        <origin xyz="0.1159 -0.3459 0.0597" rpy="0 0 0"/>
+        <limit lower="-3.14" upper="3.14" effort="10" velocity="1.0"/>
+    </joint>
+    <!-- Link4 to Link5 -->
+    <joint name="link4_to_link5" type="revolute">
+        <parent link="p_link4"/>
+        <child link="p_link5"/>
+        <axis xyz="1 0 0"/>
+        <origin xyz="0.02 -0.6878 0.024" rpy="0 0 0"/>
+        <limit lower="-3.14" upper="3.14" effort="10" velocity="1.0"/>
+    </joint>
+    <!-- Link5 to Link6 -->
+    <joint name="link5_to_link6" type="fixed">
+        <parent link="p_link5"/>
+        <child link="p_link6"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+    <!-- End Effector -->
+    <!-- <joint name="link6_to_magnetic_gripper" type="fixed">
+        <parent link="p_link6"/>
+        <child link="magnetic_gripper"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint> -->
+<!-- END OF JOINTS -->
+</robot>

@@ -1,0 +1,30 @@
+# MoveIt uses this configuration for controller management
+
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+moveit_simple_controller_manager:
+  controller_names:
+    - positioner_planning_group_controller
+    - welder_planning_group_controller
+
+  positioner_planning_group_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    default: true
+    joints:
+      - p_manip_base_to_link1
+      - p_link1_to_link2
+      - p_link2_to_link3
+      - p_link3_to_link4
+      - p_link4_to_link5
+  welder_planning_group_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    default: true
+    joints:
+      - w_manip_base_to_link1
+      - w_link1_to_link2
+      - w_link2_to_link3
+      - w_link3_to_link4
+      - w_link4_to_link5
+      - w_link5_to_link6

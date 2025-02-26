@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: welding_kinematic_controller
+    relative_path: urdf/positioner.urdf.xacro
+  srdf:
+    relative_path: config/positioner.srdf
+  package_settings:
+    author_name: Sertkaya
+    author_email: zeynep.sertkaya@rwth-aachen.de
+    generated_timestamp: 1736249620
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

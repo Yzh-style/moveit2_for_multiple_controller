@@ -1,0 +1,33 @@
+[1.107s] Invoking command in '/home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller': PYTHONPATH=/home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/build/welding_kinematic_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/welding_kinematic_controller build --build-base /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/build/welding_kinematic_controller/build install --record /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/build/welding_kinematic_controller/install.log --single-version-externally-managed install_data
+[1.481s] running egg_info
+[1.482s] creating build/welding_kinematic_controller/welding_kinematic_controller.egg-info
+[1.482s] writing build/welding_kinematic_controller/welding_kinematic_controller.egg-info/PKG-INFO
+[1.483s] writing dependency_links to build/welding_kinematic_controller/welding_kinematic_controller.egg-info/dependency_links.txt
+[1.483s] writing entry points to build/welding_kinematic_controller/welding_kinematic_controller.egg-info/entry_points.txt
+[1.483s] writing requirements to build/welding_kinematic_controller/welding_kinematic_controller.egg-info/requires.txt
+[1.483s] writing top-level names to build/welding_kinematic_controller/welding_kinematic_controller.egg-info/top_level.txt
+[1.484s] writing manifest file 'build/welding_kinematic_controller/welding_kinematic_controller.egg-info/SOURCES.txt'
+[1.486s] reading manifest file 'build/welding_kinematic_controller/welding_kinematic_controller.egg-info/SOURCES.txt'
+[1.487s] writing manifest file 'build/welding_kinematic_controller/welding_kinematic_controller.egg-info/SOURCES.txt'
+[1.488s] running build
+[1.488s] running build_py
+[1.488s] creating /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/build/welding_kinematic_controller/build
+[1.488s] creating /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/build/welding_kinematic_controller/build/lib
+[1.488s] creating /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/build/welding_kinematic_controller/build/lib/welding_kinematic_controller
+[1.489s] copying welding_kinematic_controller/__init__.py -> /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/build/welding_kinematic_controller/build/lib/welding_kinematic_controller
+[1.489s] running install
+[1.489s] running install_lib
+[1.490s] creating /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/lib/python3.10/site-packages/welding_kinematic_controller
+[1.490s] copying /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/build/welding_kinematic_controller/build/lib/welding_kinematic_controller/__init__.py -> /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/lib/python3.10/site-packages/welding_kinematic_controller
+[1.491s] byte-compiling /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/lib/python3.10/site-packages/welding_kinematic_controller/__init__.py to __init__.cpython-310.pyc
+[1.491s] running install_data
+[1.491s] creating /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/share/ament_index
+[1.492s] creating /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/share/ament_index/resource_index
+[1.492s] creating /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/share/ament_index/resource_index/packages
+[1.492s] copying resource/welding_kinematic_controller -> /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/share/ament_index/resource_index/packages
+[1.492s] copying package.xml -> /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/share/welding_kinematic_controller
+[1.492s] running install_egg_info
+[1.494s] Copying build/welding_kinematic_controller/welding_kinematic_controller.egg-info to /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/lib/python3.10/site-packages/welding_kinematic_controller-0.0.0-py3.10.egg-info
+[1.495s] running install_scripts
+[1.518s] writing list of installed files to '/home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/build/welding_kinematic_controller/install.log'
+[1.543s] Invoked command in '/home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller' returned '0': PYTHONPATH=/home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/build/welding_kinematic_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/install/welding_kinematic_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/welding_kinematic_controller build --build-base /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/build/welding_kinematic_controller/build install --record /home/lenigovi/ros2_ws/src/group-a/welding_kinematic_controller/build/welding_kinematic_controller/install.log --single-version-externally-managed install_data
